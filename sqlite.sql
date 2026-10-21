@@ -33,3 +33,5 @@ INSERT INTO employees (id, first_name, last_name, title, timezone, active, manag
   (1016, 'Henry',  'Adams',   'Junior Engineer',     'America/Chicago',     0, 1009),
   (1017, 'Isabel', 'Cruz',    'Engineering Intern',  'America/Chicago',     1, 1016),
   (1018, 'Jack',   'Murphy',  'Engineering Intern',  'America/New_York',    1, 1016);
+
+CREATE INDEX idx_employees_manager_id ON employees (manager_id);
